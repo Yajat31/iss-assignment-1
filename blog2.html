@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog2</title>
+<link rel="stylesheet" href="blog.css">
+</head>
+<body>
+<div class="container">
+  <div class="blog-post">
+    <h2>The Art of Mindful Cooking: Nourishing Body and Soul</h2>
+    <p>In today's fast-paced world, where time is a luxury and stress is a constant companion, the simple act of cooking can be a powerful form of self-care. Mindful cooking, rooted in the principles of mindfulness, encourages us to approach the kitchen with intention, attention, and a deep sense of presence.<br><br>
+
+      At its core, mindful cooking is about more than just preparing food; it's about cultivating a deeper connection with ourselves, our ingredients, and the world around us. When we approach cooking with mindfulness, we become fully engaged in the process, savoring each sensation and embracing the inherent beauty of food preparation.<br><br>
+      
+      One of the key aspects of mindful cooking is being present in the moment. Instead of rushing through recipes or multitasking while we cook, we focus our attention on the task at hand, allowing ourselves to fully immerse in the sensory experience of chopping, stirring, and tasting. By doing so, we not only enhance the flavor of our food but also cultivate a greater sense of appreciation for the ingredients that nourish our bodies.<br><br>
+      
+      Mindful cooking also encourages us to embrace imperfection and let go of expectations. Rather than striving for culinary perfection, we approach cooking with curiosity and a willingness to experiment. We allow ourselves to make mistakes, knowing that each mishap is an opportunity for growth and learning.<br><br>
+      
+      Furthermore, mindful cooking invites us to consider the broader implications of our food choices. By sourcing ingredients mindfully—choosing organic, locally grown produce whenever possible and supporting sustainable farming practices—we can cultivate a deeper connection to the Earth and reduce our ecological footprint.<br><br>
+      
+      Ultimately, mindful cooking is a practice in self-love and nourishment, both for our bodies and our souls. It reminds us to slow down, savor the moment, and honor the sacred ritual of preparing food. So the next time you find yourself in the kitchen, take a deep breath, embrace the present moment, and let the transformative power of mindful cooking guide you on a journey of culinary delight and self-discovery.</p>
+    <button class="like-button">Like</button>
+    <span id="like-count">43,432</span> likes
+    <div class="comment-section">
+      <h2>Comments</h2>
+      <ul id="comment-list"></ul>
+      <form class="comment-form">
+        <input type="text" id="comment-input" required>
+        <button type="submit">Add Comment</button>
+      </form>
+    </div>
+  </div>
+</div>
+<script src="blog2.js"></script>
+<script>
+  const blogId = 2;
+  const comments = JSON.parse(localStorage.getItem(`comments-${blogId}`)) || [];
+  const commentList = document.getElementById('comment-list');
+  comments.forEach(comment => {
+    const commentElement = document.createElement('li');
+    commentElement.textContent = comment;
+    commentList.appendChild(commentElement);
+  });
+</script>
+</body>
+</html>

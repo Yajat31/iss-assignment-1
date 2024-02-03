@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog1</title>
+<link rel="stylesheet" href="blog.css">
+</head>
+<body>
+<div class="container">
+  <div class="blog-post">
+    <h2>Exploring the Magic of Urban Gardening</h2>
+    <p>Urban gardening is more than just a trend; it's a movement that's reconnecting city dwellers with nature in the midst of concrete jungles. From rooftop gardens to community plots nestled between buildings, urban gardening is transforming urban landscapes and mindsets alike.<br><br>
+
+      One of the most captivating aspects of urban gardening is its ability to foster community bonds. In shared garden spaces, people from diverse backgrounds come together, united by a common passion for growing food and beautifying their surroundings. Whether it's swapping gardening tips, sharing harvests, or simply enjoying the tranquility of a green oasis, these gardens serve as vibrant hubs of social interaction.<br><br>
+      
+      Moreover, urban gardening offers a myriad of environmental benefits. By cultivating plants in cities, we not only mitigate the urban heat island effect but also improve air quality and biodiversity. Rooftop gardens, in particular, play a crucial role in reducing stormwater runoff and enhancing building insulation, thus contributing to energy conservation efforts.<br><br>
+      
+      But perhaps the most profound impact of urban gardening lies in its ability to nourish the soul. Amidst the hustle and bustle of city life, tending to plants offers a therapeutic escape—a chance to slow down, reconnect with the Earth, and find solace in the simple act of nurturing life. For many urbanites, gardening becomes a form of meditation, grounding them in the present moment and instilling a profound sense of peace.<br><br>
+      
+      As we continue to grapple with the challenges of urbanization and environmental degradation, urban gardening emerges as a beacon of hope—a testament to our resilience and our innate connection to the natural world. So whether you have a window sill or a community plot at your disposal, consider joining the urban gardening revolution. Together, we can cultivate not only gardens but also thriving, sustainable communities rooted in harmony with nature.</p>
+    <button class="like-button">Like</button>
+    <span id="like-count">200,000</span> likes
+    <div class="comment-section">
+      <h2>Comments</h2>
+      <ul id="comment-list"></ul>
+      <form class="comment-form">
+        <input type="text" id="comment-input" required>
+        <button type="submit">Add Comment</button>
+      </form>
+    </div>
+  </div>
+</div>
+<script src="blog1.js"></script>
+<script>
+  const blogId = 1;
+  const comments = JSON.parse(localStorage.getItem(`comments-${blogId}`)) || [];
+  const commentList = document.getElementById('comment-list');
+  comments.forEach(comment => {
+    const commentElement = document.createElement('li');
+    commentElement.textContent = comment;
+    commentList.appendChild(commentElement);
+  });
+</script>
+</body>
+</html>

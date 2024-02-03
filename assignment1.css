@@ -1,0 +1,525 @@
+body{
+    background-image: url(https://media.istockphoto.com/id/1435226158/photo/circuit-board-background-computer-data-technology-artificial-intelligence.webp?b=1&s=170667a&w=0&k=20&c=d-gHg6uCV5JEaKJCpxhJ01Ab19m032daRC8vDo8NzDI=);
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    background-image: url(https://img.freepik.com/premium-vector/modern-abstract-technology-background-design-vector-illustration_29865-5271.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 575px;
+    overflow: auto;   
+    border-radius: 20px;
+}
+.wrapper{
+    display: flex;
+    width: 800px;
+    height: 575px;
+    color-scheme: light;
+    color: rgb(1, 1, 0);
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+}
+.content{
+    padding-top: 20px;
+    display: flex;
+    text-align: center; 
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.content img{
+    width: 200px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.568);
+}
+.content img:hover{
+    transform: scale(1.3);
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.tabs{
+    top: 0;
+    position: sticky;
+    display: flex;
+    justify-content:center;
+    align-items: flex-start; 
+    color: rgb(1, 1, 0);
+    font-size: 20px;
+    flex-wrap: wrap;
+    background-image: url(https://images.pexels.com/photos/373543/pexels-photo-373543.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 2;
+}
+.tabs button{
+    background-image: url(https://t4.ftcdn.net/jpg/01/94/66/05/360_F_194660576_u6Oz05kcLlBvQFNh9ovTGf17vxeCQaMB.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(1, 1, 0);
+    border: 2px solid rgb(0, 0, 0);
+    padding: 10px 20px;
+    margin: 10px 20px;
+    font-size: 20px;
+    margin-right: 0px;
+    margin-left: 0px;
+    font-family: 'Pricedown';
+}
+.tabs button:first-child{
+    border-radius: 10px 0px 0px 10px;
+}
+.tabs button:hover{
+    background-color: rgb(255, 252, 252);
+    color: rgb(1, 1, 0);
+    border: 2px solid rgb(0, 0, 0);
+    padding: 10px 20px;
+    margin: 10px 20px;
+    font-size: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.695);
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+body.dark-mode {
+    background-image: url(https://media.istockphoto.com/id/1370884809/photo/futuristic-dots-pattern-on-dark-background-colored-music-wave-big-data-technology-or-science.jpg?b=1&s=612x612&w=0&k=20&c=94ecE7Yayjo-XF8-lG92IrGdkZD4gWTI_XVcVJYUZEg=);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: rgb(255, 255, 255);
+}
+body.dark-mode .main{
+    background-image: url(data:image/jpeg;base64,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);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(255, 255, 255);
+}
+body.dark-mode .tabs{
+    display: flex;
+    justify-content:center;
+    align-items: flex-start; 
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    flex-wrap: wrap;
+    background-image: url(https://media.istockphoto.com/id/1427678436/photo/abstract-geometric-shapes-background.webp?b=1&s=170667a&w=0&k=20&c=JcLcBb9KH23VdooLR2ig2-etoJvUVV-hyvDILxfmESw=);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-weight: bold;
+}
+body.dark-mode .tabs button{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMeAx64Pqrj-f3cK6q6I2IBFso6ZojIUrf0w&usqp=CAU);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(235, 235, 235);
+    border: 1px solid rgb(255, 255, 254);
+    padding: 10px 20px;
+    margin: 10px 20px;
+    margin-right: 0px;
+    margin-left: 0px;
+    font-size: 20px;
+}
+body.dark-mode .tabs button:hover{
+    background-color: rgb(94, 94, 94);
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(205, 205, 205);
+    padding: 10px 20px;
+    margin: 10px 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+    font-size: 20px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.695);
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+.switch {
+    position: relative;
+    top: 15px;
+    left: 20px;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(https://cdn3.vectorstock.com/i/1000x1000/07/62/cloudy-background-on-blue-sky-vector-9790762.jpg);
+    background-size: cover;
+    transition: .4s;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.671);
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-image: url(https://i.pinimg.com/736x/37/d2/4c/37d24c0cf1098fa5b9029fa3be0765da.jpg);
+    transition: .4s;
+    background-size: cover;
+  }
+  
+  input:checked + .slider {
+    background-image: url(https://img.freepik.com/free-vector/gradient-starry-night-decorative-background_23-2148280978.jpg?size=626&ext=jpg&ga=GA1.1.1448711260.1706227200&semt=ais);
+    box-shadow: 1px 1px 1px 1px rgba(235, 232, 232, 0.726);
+
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(26px);
+    background-image: url(https://e7.pngegg.com/pngimages/855/465/png-clipart-logo-font-moon-night-blue-logo-thumbnail.png);
+  }
+  
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+.socials img{
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    padding: 2px;
+    margin: 5px;
+}  
+body.dark-mode .socials img{
+    width: 30px;
+    height: 30px;
+    border: 1px solid white;
+    padding: 2px;
+    margin: 5px;
+}
+@font-face {
+    font-family: 'Pricedown';
+    src: local('pricedown'), url('TechnaSans-Regular.otf') format('opentype');
+}
+body.dark-mode h1{
+    font-family: 'Pricedown';
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.671);
+    -webkit-text-stroke: 2px black;
+    font-size: 60px;
+}
+h1{
+    font-family: 'Pricedown';
+    color: rgb(1, 1, 0);
+    -webkit-text-stroke: 2px rgb(255, 254, 254);
+    font-size: 60px;
+    text-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.873);
+}
+#cursor {
+  animation: blink .75s step-end infinite;
+}
+
+@keyframes blink {
+  from, to { color: transparent }
+  50% { color: orange; }
+}
+h2{
+    font-family: 'Pricedown';
+    color: rgb(1, 1, 0);
+    -webkit-text-stroke: 2px rgb(255, 254, 254);
+    font-size: 40px;
+    text-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.873);
+}
+p{
+    font-family: 'Fira Sans', sans-serif;
+    color: rgb(1, 1, 0);
+    font-size: 20px;
+    text-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.873);
+    padding: 10px;
+}
+body.dark-mode p{
+    font-family:Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    text-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.671);
+    font-weight: lighter;
+    padding: 10px;
+}
+@keyframes swipeRight {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.tabcontent {
+    animation-duration: 0.5s;
+}
+* {
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: #474e5d;
+    font-family: Helvetica, sans-serif;
+  }
+
+  .timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: rgb(191, 191, 191);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+
+  .event {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+  }
+
+  .event::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #FF9F55;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  .left {
+    left: 0;
+  }
+  
+  .right {
+    left: 50%;
+  }
+  
+  .left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid rgb(171, 168, 168);
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent rgb(185, 185, 185);
+  }
+  
+  .right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid rgb(156, 156, 156);
+    border-width: 10px 10px 10px 0;
+    border-color: transparent rgb(191, 191, 191) transparent transparent;
+  }
+  
+  .right::after {
+    left: -16px;
+  }
+  
+  .contents {
+    padding: 20px 30px;
+    background-color: rgba(150, 213, 213, 0.209);
+    position: relative;
+    border-radius: 6px;
+    border: 2px solid black;
+  }
+  @media screen and (max-width: 600px) {
+    .timeline::after {
+      left: 31px;
+    }
+  
+    .event {
+      width: 100%;
+      padding-left: 70px;
+      padding-right: 25px;
+    }
+  
+    .event::before {
+      left: 60px;
+      border: medium solid white;
+      border-width: 10px 10px 10px 0;
+      border-color: transparent white transparent transparent;
+    }
+
+    .left::after, .right::after {
+      left: 15px;
+    }
+  
+    .right {
+      left: 0%;
+    }
+    }
+
+.contents img{
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+}  
+body.dark-mode .contents{
+    padding: 20px 30px;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    border-radius: 6px;
+    border: 2px solid rgb(255, 255, 255);
+    color: #ffffff;
+}
+body.dark-mode h2{
+    font-family: 'Pricedown';
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    font-weight: lighter;
+    -webkit-text-stroke: 0;
+}
+#slideshow {
+  position: relative;
+  width: 500px;
+  height: 300px;
+}
+
+#slideshow .slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+#slideshow .slide.active {
+  opacity: 1;
+}
+#slideshow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 330px;
+    background-color: beige;
+    border: 20px solid rgb(0, 0, 0);
+    border-right: 0px;
+    border-left: 0px;
+}
+.slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0px;
+}
+.slide img:hover{
+    transform: scale(1.0);
+    cursor: pointer;
+    transition: fade 0.3s;
+}
+ul{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+li:hover{
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+body.dark-mode li:hover{
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.blog-link{
+  background-image: url(https://4vector.com/i/free-vector-abstract-vector-background_022091_Abstract%20Vector%20Background/Abstract%20Vector%20Background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.671);
+  transition: 0.3s;
+  margin: 30px;
+}
+body.dark-mode .blog-link{
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgb(0, 0, 0);
+  box-shadow: 2px 2px 2px 2px rgba(255, 255, 255, 0.671);
+  transition: 0.3s;
+  background-image: url(https://images.ctfassets.net/hrltx12pl8hq/1fR5Y7KaK9puRmCDaIof7j/09e2b2b9eaf42d450aba695056793607/vector1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.blog-link:hover{
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  background-image: none;
+}
+body.dark-mode .blog-link:hover{
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  background-image: none;
+}
+.blog-link h3{
+  display: inline-block;
+}
+#blog{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
